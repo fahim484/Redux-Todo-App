@@ -1,9 +1,10 @@
 import "./App.css";
+import TodoApp from "./Todo";
 
 const App = () => {
   return (
     <>
-      <h1 className="font-extrabold text-green-500 text-4xl">Redux Todo App</h1>
+      <TodoApp />
     </>
   );
 };

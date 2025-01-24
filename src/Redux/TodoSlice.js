@@ -15,6 +15,10 @@ const todoSlice = createSlice({
     deleteTodo: (state, action) => {
       return state.filter((todo) => todo.id !== action.payload);
     },
+
+    loadFromStorage: (state, action) => {
+      return [...state, action.payload];
+    },
   },
 });
 
